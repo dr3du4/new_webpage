@@ -3,88 +3,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Centrum | Digital Bloom Portfolio</title>
+<title>Jan Krzyszkowski | Portfolio</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind.config.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "surface-container": "#f2ecf0",
-          "error": "#ac3149",
-          "primary-container": "#f1a6ff",
-          "on-tertiary-fixed": "#27006a",
-          "primary-fixed": "#f1a6ff",
-          "surface-tint": "#952cb1",
-          "surface-container-highest": "#e7e0e6",
-          "on-primary": "#fff7fb",
-          "surface-container-low": "#f8f2f5",
-          "outline": "#7e797e",
-          "surface-container-lowest": "#ffffff",
-          "tertiary": "#6948c1",
-          "on-surface": "#343136",
-          "outline-variant": "#b6b0b5",
-          "error-dim": "#770326",
-          "on-background": "#343136",
-          "secondary-fixed-dim": "#ffc5d3",
-          "primary-fixed-dim": "#ec91ff",
-          "on-primary-fixed-variant": "#760093",
-          "on-primary-container": "#680082",
-          "on-secondary-container": "#9a1d50",
-          "surface": "#fef8fb",
-          "on-secondary-fixed-variant": "#a7295a",
-          "surface-variant": "#e7e0e6",
-          "on-tertiary-fixed-variant": "#48229f",
-          "inverse-primary": "#e67aff",
-          "on-secondary-fixed": "#81013e",
-          "secondary-container": "#ffd9e1",
-          "secondary": "#ac2d5e",
-          "on-secondary": "#fff7f7",
-          "on-error": "#fff7f7",
-          "error-container": "#f76a80",
-          "background": "#fef8fb",
-          "tertiary-dim": "#5c3ab4",
-          "on-tertiary": "#fdf7ff",
-          "on-surface-variant": "#625e62",
-          "on-error-container": "#68001f",
-          "tertiary-container": "#c2acff",
-          "inverse-surface": "#0f0e10",
-          "secondary-dim": "#9c1f52",
-          "surface-container-high": "#ede6eb",
-          "on-tertiary-container": "#3f1496",
-          "tertiary-fixed-dim": "#b59cff",
-          "on-primary-fixed": "#47005a",
-          "tertiary-fixed": "#c2acff",
-          "surface-dim": "#dfd8de",
-          "primary": "#952cb1",
-          "secondary-fixed": "#ffd9e1",
-          "primary-dim": "#871ba4",
-          "surface-bright": "#fef8fb",
-          "inverse-on-surface": "#a09c9e"
-        },
-        fontFamily: {
-          "headline": ["Plus Jakarta Sans"],
-          "body": ["Plus Jakarta Sans"],
-          "label": ["Plus Jakarta Sans"]
-        },
-        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-      },
-    },
-  }
-</script>
-<style>
-  body { font-family: 'Plus Jakarta Sans', sans-serif; }
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-  .glass-panel { backdrop-filter: blur(24px); background-color: rgba(255, 255, 255, 0.6); }
-  .marquee { display: flex; overflow: hidden; user-select: none; gap: 4rem; }
-  .marquee-content { flex-shrink: 0; display: flex; justify-content: space-around; min-width: 100%; gap: 4rem; animation: scroll 30s linear infinite; }
-  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
-</style>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
 
