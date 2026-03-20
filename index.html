@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Centrum | Digital Bloom Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface-container": "#f2ecf0",
+          "error": "#ac3149",
+          "primary-container": "#f1a6ff",
+          "on-tertiary-fixed": "#27006a",
+          "primary-fixed": "#f1a6ff",
+          "surface-tint": "#952cb1",
+          "surface-container-highest": "#e7e0e6",
+          "on-primary": "#fff7fb",
+          "surface-container-low": "#f8f2f5",
+          "outline": "#7e797e",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#6948c1",
+          "on-surface": "#343136",
+          "outline-variant": "#b6b0b5",
+          "error-dim": "#770326",
+          "on-background": "#343136",
+          "secondary-fixed-dim": "#ffc5d3",
+          "primary-fixed-dim": "#ec91ff",
+          "on-primary-fixed-variant": "#760093",
+          "on-primary-container": "#680082",
+          "on-secondary-container": "#9a1d50",
+          "surface": "#fef8fb",
+          "on-secondary-fixed-variant": "#a7295a",
+          "surface-variant": "#e7e0e6",
+          "on-tertiary-fixed-variant": "#48229f",
+          "inverse-primary": "#e67aff",
+          "on-secondary-fixed": "#81013e",
+          "secondary-container": "#ffd9e1",
+          "secondary": "#ac2d5e",
+          "on-secondary": "#fff7f7",
+          "on-error": "#fff7f7",
+          "error-container": "#f76a80",
+          "background": "#fef8fb",
+          "tertiary-dim": "#5c3ab4",
+          "on-tertiary": "#fdf7ff",
+          "on-surface-variant": "#625e62",
+          "on-error-container": "#68001f",
+          "tertiary-container": "#c2acff",
+          "inverse-surface": "#0f0e10",
+          "secondary-dim": "#9c1f52",
+          "surface-container-high": "#ede6eb",
+          "on-tertiary-container": "#3f1496",
+          "tertiary-fixed-dim": "#b59cff",
+          "on-primary-fixed": "#47005a",
+          "tertiary-fixed": "#c2acff",
+          "surface-dim": "#dfd8de",
+          "primary": "#952cb1",
+          "secondary-fixed": "#ffd9e1",
+          "primary-dim": "#871ba4",
+          "surface-bright": "#fef8fb",
+          "inverse-on-surface": "#a09c9e"
+        },
+        fontFamily: {
+          "headline": ["Plus Jakarta Sans"],
+          "body": ["Plus Jakarta Sans"],
+          "label": ["Plus Jakarta Sans"]
+        },
+        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .glass-panel { backdrop-filter: blur(24px); background-color: rgba(255, 255, 255, 0.6); }
+  .marquee { display: flex; overflow: hidden; user-select: none; gap: 4rem; }
+  .marquee-content { flex-shrink: 0; display: flex; justify-content: space-around; min-width: 100%; gap: 4rem; animation: scroll 30s linear infinite; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+</style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+
+<div id="site-nav"></div>
+
+<main class="pt-28 space-y-20">
+  <!-- Top Banner: Web3 Spirit Blossom Summit -->
+  <section class="max-w-7xl mx-auto px-6">
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-tertiary p-1">
+      <div class="bg-surface-container-lowest rounded-[22px] px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center">
+            <span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">eco</span>
+          </div>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-secondary">Upcoming Event</p>
+            <h3 class="text-lg font-bold text-on-surface">Web3 Spirit Blossom Summit</h3>
+          </div>
+        </div>
+        <div class="flex items-center gap-6">
+          <span class="hidden lg:block text-on-surface-variant text-sm font-medium">October 24–26 • Virtual &amp; Tokyo Hub</span>
+          <button class="bg-on-surface text-surface px-6 py-2 rounded-full text-sm font-bold hover:bg-primary transition-colors">Register Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7 space-y-8">
+      <div class="space-y-4">
+        <span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-tight">AVAILABLE FOR COLLABORATION</span>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1]">
+          Architecting the <span class="bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">Digital Bloom.</span>
+        </h1>
+        <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+          Full-stack engineer and designer crafting ethereal digital experiences through React, Go, and AWS.
+          Bridging the gap between brutalist architecture and organic growth.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-transform">Start a Project</button>
+        <button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-bold hover:bg-surface-container-highest transition-colors">View Archives</button>
+      </div>
+    </div>
+    <div class="lg:col-span-5 relative">
+      <div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-12 -right-12 w-64 h-64 bg-tertiary-container/20 rounded-full blur-3xl"></div>
+      <div class="relative z-10 p-4 bg-white/40 backdrop-blur-md rounded-[2.5rem] border border-white/40 shadow-2xl">
+        <img class="w-full h-[500px] object-cover rounded-[2rem] grayscale-[20%] hover:grayscale-0 transition-all duration-700" alt="Professional portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCChWPqv7oDLeW0Hc6PrHQHH7QR-4N1UzeqxfFNWJo4kGDChMTZZ1WP6IYzA07JKYLOeUZjbk0bn2QzbCunfZgbgwGpsjxUycbP-5_OsfCdD7H5jJFsn0HWQOuZUNalk71-5lKDsrXqKBQEKhaR2yMyJZqikwYgHqnRrStWoGNN46o0HSasEOL06xn_U_UlDywk7HjTaRoCbYyAteXJJclRqjCQpsW5DX0QdniwLmqmu4cStwuL5iWuTokxyH97iE4jsIylGc0CrI0"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee: Partners in Progress -->
+  <section class="bg-surface-container-low py-12 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
+      <p class="text-sm font-bold text-on-surface-variant/60 uppercase tracking-[0.2em]">Partners in Progress</p>
+    </div>
+    <div class="marquee">
+      <div class="marquee-content items-center">
+        <span class="text-2xl font-black text-on-surface/40 flex items-center gap-2"><span class="material-symbols-outlined">api</span> META</span>
+        <span class="text-2xl font-black text-on-surface/40 flex items-center gap-2"><span class="material-symbols-outlined">payments</span> STRIPE</span>
+        <span class="text-2xl font-black text-on-surface/40 flex items-center gap-2"><span class="material-symbols-outlined">rocket_launch</span> SPACEX</span>
+        <span class="text-2xl font-black text-on-surface/40 flex items-center gap-2"><span class="material-symbols-outlined">neurology</span> OPENAI</span>
+        <span class="text-2xl font-black text-on-surface/40 flex items-center gap-2"><span class="material-symbols-outlined">api</span> META</span>
+        <span class="text-2xl font-black text-on-surface/40 flex items-center gap-2"><span class="material-symbols-outlined">payments</span> STRIPE</span>
+        <span class="text-2xl font-black text-on-surface/40 flex items-center gap-2"><span class="material-symbols-outlined">rocket_launch</span> SPACEX</span>
+        <span class="text-2xl font-black text-on-surface/40 flex items-center gap-2"><span class="material-symbols-outlined">neurology</span> OPENAI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack & Certs Bento -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-[2.5rem] shadow-sm flex flex-col justify-between">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Core Tech Stack</h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+            <div class="flex items-center gap-4 group">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary-container transition-colors">
+                <span class="material-symbols-outlined text-primary">javascript</span>
+              </div>
+              <span class="font-semibold text-on-surface">React &amp; TS</span>
+            </div>
+            <div class="flex items-center gap-4 group">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary-container transition-colors">
+                <span class="material-symbols-outlined text-primary">data_object</span>
+              </div>
+              <span class="font-semibold text-on-surface">Go (Golang)</span>
+            </div>
+            <div class="flex items-center gap-4 group">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary-container transition-colors">
+                <span class="material-symbols-outlined text-primary">database</span>
+              </div>
+              <span class="font-semibold text-on-surface">PostgreSQL</span>
+            </div>
+            <div class="flex items-center gap-4 group">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary-container transition-colors">
+                <span class="material-symbols-outlined text-primary">cloud</span>
+              </div>
+              <span class="font-semibold text-on-surface">AWS</span>
+            </div>
+            <div class="flex items-center gap-4 group">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary-container transition-colors">
+                <span class="material-symbols-outlined text-primary">hub</span>
+              </div>
+              <span class="font-semibold text-on-surface">GraphQL</span>
+            </div>
+            <div class="flex items-center gap-4 group">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary-container transition-colors">
+                <span class="material-symbols-outlined text-primary">terminal</span>
+              </div>
+              <span class="font-semibold text-on-surface">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary p-10 rounded-[2.5rem] text-white flex flex-col justify-between">
+        <h2 class="text-3xl font-bold">Certifications</h2>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+            <span class="font-medium">AWS Solutions Architect</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+            <span class="font-medium">Google Professional Cloud</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+            <span class="font-medium">Meta Frontend Engineer</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Projects Section -->
+  <section class="max-w-7xl mx-auto px-6 space-y-12">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div class="space-y-2">
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">Selected Projects</h2>
+        <p class="text-on-surface-variant text-lg">Case studies in performance and user experience.</p>
+      </div>
+      <div class="flex gap-2">
+        <div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center cursor-pointer hover:bg-primary-container transition-colors">
+          <span class="material-symbols-outlined">chevron_left</span>
+        </div>
+        <div class="w-12 h-12 rounded-full bg-on-surface text-surface flex items-center justify-center cursor-pointer hover:bg-primary transition-colors">
+          <span class="material-symbols-outlined">chevron_right</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Project Card 1 -->
+      <div class="group bg-surface-container-lowest rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col">
+        <div class="h-80 overflow-hidden relative">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Abstract colorful light streaks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4u3Ix8TaPijKchdNkLVVIi5giVak03MGuTz8Jl21zURKu1jcECiWbC52JeuAgQYIvK09XRh9aXyyE5jY0Y0sUAeB7hbmwERGyw64dY-PRgE-Jph3saI_QtGxMkGeNmipoSQT9ApgRgFv0Au7ZCYyGfepx3Gr4BoXoyWE6SxvE-2bwoWYoQBzqP9rnJn6rZcau_6Oa8koBbeOpZyB8ITeywlWLymUscaOGhvg39-sRS-b8tgS3SFmhIbO0UQZRZ04PNAlwYiSoEZI"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+            <div class="flex gap-2">
+              <span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold">FinTech</span>
+              <span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold">AI</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-10 space-y-6 flex-1 flex flex-col">
+          <div class="flex-1">
+            <h3 class="text-3xl font-bold group-hover:text-primary transition-colors">Lumina Ledger</h3>
+            <p class="text-on-surface-variant mt-4 leading-relaxed">A next-generation wealth management platform using generative AI to predict market shifts and automate portfolio rebalancing.</p>
+          </div>
+          <button class="w-full py-4 rounded-2xl bg-surface-container-high text-on-surface font-bold text-center group-hover:bg-primary group-hover:text-white transition-all flex items-center justify-center gap-2">
+            View Details <span class="material-symbols-outlined text-lg">open_in_new</span>
+          </button>
+        </div>
+      </div>
+      <!-- Project Card 2 -->
+      <div class="group bg-surface-container-lowest rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col">
+        <div class="h-80 overflow-hidden relative">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Cyberpunk neon hardware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkDr7p3dWfB4ByaGH1SvhgB2bi21ZfOUUGVxz6xOf2m5j9AEbT1jr7OCpp1sb2Wpj0c0nj3VrCXdM67cD-ahQhmL27NoBwNdKmIAA4oUVttYRwrdHhucx6RMr5bZvkL_asZL26cJEyPPVfQqKD5ofWBrZMBefffXcUKshqZpHPUBlWZrtd0OseWQs-1dq1J_zRmngYc__I-oHFUfZGhq7dfG_F6pRZUtEhaj3_40lV4OLbAg5mZV9_7FE6t2tj7PS5t_I8_cVpRj4"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+            <div class="flex gap-2">
+              <span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold">E-Commerce</span>
+              <span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold">Web3</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-10 space-y-6 flex-1 flex flex-col">
+          <div class="flex-1">
+            <h3 class="text-3xl font-bold group-hover:text-primary transition-colors">Nexus Node</h3>
+            <p class="text-on-surface-variant mt-4 leading-relaxed">Decentralized marketplace for physical tech collectibles, integrated with Ethereum L2 for instant, gasless transactions.</p>
+          </div>
+          <button class="w-full py-4 rounded-2xl bg-surface-container-high text-on-surface font-bold text-center group-hover:bg-primary group-hover:text-white transition-all flex items-center justify-center gap-2">
+            View Details <span class="material-symbols-outlined text-lg">open_in_new</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social & Updates Section -->
+  <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 py-12">
+    <!-- LinkedIn Preview -->
+    <div class="bg-surface-container-lowest p-8 rounded-[2.5rem] shadow-sm flex flex-col space-y-6">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-[#0077b5] flex items-center justify-center text-white">
+            <span class="material-symbols-outlined">share</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg">Latest LinkedIn Insight</h4>
+            <p class="text-xs text-on-surface-variant">2 hours ago</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined text-on-surface-variant cursor-pointer">more_horiz</span>
+      </div>
+      <div class="space-y-4">
+        <p class="text-on-surface leading-relaxed">
+          Just wrapped up the architecture for our new distributed system. The transition from monolithic to microservices wasn't just about code—it was about culture... <span class="text-primary font-bold cursor-pointer">#SystemDesign #CloudNative</span>
+        </p>
+        <div class="h-48 rounded-2xl bg-surface-container-high overflow-hidden">
+          <img class="w-full h-full object-cover" alt="System architecture diagram" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxyTXFocGqTkp0PYZ8Kb2pOG92QLW76fJWdyGMHo9zCec1VomX1DPdLqvvMDBLzBSE7nkY3pWo84flwhDRaXM6oP1_N38SpVbStD-Uwwi__V_DYHhXIforBz-m0CsMRXXgeErMtqt5FziToj5kTvvoXlm_aFbse5n_x6RHElpUKrRrxzyNxMO5D4WiVHT-qCs5KHlgTPwBSNHSJzNAxFexsGS0A7vPSVLm5Jc-3U_SFGGzpBJguI3GQ3gfsI1dCsKBizRFYSw8ZVQ"/>
+        </div>
+      </div>
+      <div class="flex items-center gap-6 pt-4 border-t border-outline-variant/10">
+        <span class="text-xs font-bold text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-sm">thumb_up</span> 142 Likes</span>
+        <span class="text-xs font-bold text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-sm">chat_bubble</span> 28 Comments</span>
+      </div>
+    </div>
+    <!-- Newsletter Feed -->
+    <div class="bg-gradient-to-br from-tertiary to-primary p-10 rounded-[2.5rem] text-white flex flex-col justify-center space-y-8">
+      <div class="space-y-4">
+        <h2 class="text-4xl font-extrabold tracking-tight">The Digital Bloom Newsletter</h2>
+        <p class="text-white/80 text-lg leading-relaxed">Join 12,000+ developers receiving weekly insights on tech stack evolution and UI/UX philosophy.</p>
+      </div>
+      <form class="space-y-4">
+        <div class="relative">
+          <input class="w-full bg-white/10 border-none rounded-2xl py-5 px-6 placeholder:text-white/50 focus:ring-2 focus:ring-white/40 text-white backdrop-blur-md" placeholder="Enter your email" type="email"/>
+          <button class="absolute right-3 top-3 bottom-3 px-6 rounded-xl bg-white text-primary font-bold hover:bg-primary-container transition-colors" type="submit">Subscribe</button>
+        </div>
+        <p class="text-xs text-white/40">No spam. Just curated growth. Delivered every Tuesday.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Centrum | Digital Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary-container": "#f1a6ff",
+          "error": "#ac3149",
+          "on-primary-fixed-variant": "#760093",
+          "on-secondary-fixed-variant": "#a7295a",
+          "on-tertiary-container": "#3f1496",
+          "on-surface": "#343136",
+          "on-secondary-container": "#9a1d50",
+          "inverse-surface": "#0f0e10",
+          "primary-fixed-dim": "#ec91ff",
+          "tertiary-container": "#c2acff",
+          "surface-container": "#f2ecf0",
+          "primary-fixed": "#f1a6ff",
+          "on-tertiary-fixed": "#27006a",
+          "on-primary-fixed": "#47005a",
+          "secondary-container": "#ffd9e1",
+          "tertiary": "#6948c1",
+          "surface": "#fef8fb",
+          "error-dim": "#770326",
+          "secondary": "#ac2d5e",
+          "on-tertiary": "#fdf7ff",
+          "on-error": "#fff7f7",
+          "surface-container-low": "#f8f2f5",
+          "on-tertiary-fixed-variant": "#48229f",
+          "on-secondary-fixed": "#81013e",
+          "error-container": "#f76a80",
+          "surface-tint": "#952cb1",
+          "on-primary-container": "#680082",
+          "secondary-dim": "#9c1f52",
+          "tertiary-fixed": "#c2acff",
+          "tertiary-fixed-dim": "#b59cff",
+          "surface-container-high": "#ede6eb",
+          "on-secondary": "#fff7f7",
+          "surface-variant": "#e7e0e6",
+          "inverse-on-surface": "#a09c9e",
+          "outline": "#7e797e",
+          "surface-bright": "#fef8fb",
+          "primary-dim": "#871ba4",
+          "secondary-fixed": "#ffd9e1",
+          "tertiary-dim": "#5c3ab4",
+          "surface-container-lowest": "#ffffff",
+          "on-primary": "#fff7fb",
+          "on-error-container": "#68001f",
+          "inverse-primary": "#e67aff",
+          "on-background": "#343136",
+          "background": "#fef8fb",
+          "outline-variant": "#b6b0b5",
+          "surface-container-highest": "#e7e0e6",
+          "secondary-fixed-dim": "#ffc5d3",
+          "primary": "#952cb1",
+          "on-surface-variant": "#625e62",
+          "surface-dim": "#dfd8de"
+        },
+        fontFamily: {
+          "headline": ["Plus Jakarta Sans"],
+          "body": ["Plus Jakarta Sans"],
+          "label": ["Plus Jakarta Sans"]
+        },
+        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fef8fb; color: #343136; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .glass-nav { background: rgba(254, 248, 251, 0.6); backdrop-filter: blur(24px); }
+  .bloom-shadow { box-shadow: 0 8px 32px rgba(149, 44, 177, 0.06); }
+  .text-gradient { background: linear-gradient(135deg, #952cb1, #f1a6ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .bg-bloom-gradient { background: linear-gradient(135deg, #952cb1, #f1a6ff); }
+</style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+
+<div id="site-nav"></div>
+
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto overflow-hidden">
+  <!-- Hero Section: Personal Bio -->
+  <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-32">
+    <div class="lg:col-span-7 space-y-8">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-sm font-semibold">
+        <span class="material-symbols-outlined text-sm">potted_plant</span>
+        The Human Behind The Code
+      </div>
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface leading-[1.1]">
+        Crafting <span class="text-gradient">digital ecosystems</span> that breathe.
+      </h1>
+      <p class="text-xl text-on-surface-variant leading-relaxed max-w-2xl">
+        I am a developer and designer based in the intersection of logic and aesthetics. At Centrum, I build tools that don't just solve problems—they create experiences that feel as natural as a blooming garden.
+      </p>
+      <div class="flex gap-4">
+        <div class="p-6 bg-surface-container-lowest rounded-xl bloom-shadow flex-1">
+          <span class="material-symbols-outlined text-primary mb-2">auto_awesome</span>
+          <h3 class="font-bold text-lg mb-1">Vision</h3>
+          <p class="text-sm text-on-surface-variant">Elevating standard SaaS into high-end editorial experiences.</p>
+        </div>
+        <div class="p-6 bg-surface-container-lowest rounded-xl bloom-shadow flex-1">
+          <span class="material-symbols-outlined text-primary mb-2">psychology</span>
+          <h3 class="font-bold text-lg mb-1">Approach</h3>
+          <p class="text-sm text-on-surface-variant">Minimalist architecture met with maximalist attention to detail.</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-5 relative">
+      <div class="absolute -inset-4 bg-primary-container/20 blur-3xl rounded-full"></div>
+      <div class="relative aspect-[4/5] rounded-[2rem] overflow-hidden bloom-shadow border-4 border-surface-container-lowest">
+        <img class="w-full h-full object-cover" alt="Professional portrait of a creative developer in a soft light setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy98osQITmWNzucjRlZQ_yNoPJYp0_Qiq0NU3LDJqF09hfICVFTYOSwJOG1-U2PBzxAXZdOibJBplBpmucLmW7K5Tmd6B6mlyd8v-eoSvBYt9w--UggVpGBgcB1hU51HYlG2pwQaVR3ESUalZKWecgsT0XkpIF80unb9DdJ0N8ja9NjO4MBL53m1pCbucxWCLp-S6RxWrYwhBuzCgEfGytU-928v3Oxlf436T9vdt0Q6Q4QHN3N5Chp1y-5-0cMJOJLdnSHvpfMiw"/>
+      </div>
+      <!-- Floating Decorative Element -->
+      <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl bloom-shadow flex items-center gap-4">
+        <div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center">
+          <span class="material-symbols-outlined text-on-primary-container">verified</span>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Current Focus</p>
+          <p class="text-primary font-bold">Generative UI Systems</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Journey: Asymmetric Bento Grid -->
+  <section class="mb-32">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+      <div class="space-y-4">
+        <h2 class="text-4xl font-bold tracking-tight">The Professional Journey</h2>
+        <p class="text-on-surface-variant max-w-md">A decade of turning complex data into intuitive, human-centric interfaces.</p>
+      </div>
+      <div class="flex gap-2">
+        <div class="w-12 h-1 rounded-full bg-primary-container"></div>
+        <div class="w-4 h-1 rounded-full bg-outline-variant"></div>
+        <div class="w-4 h-1 rounded-full bg-outline-variant"></div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- Large Card -->
+      <div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest p-10 rounded-[2rem] bloom-shadow relative overflow-hidden group">
+        <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform duration-700">
+          <span class="material-symbols-outlined text-9xl">rocket_launch</span>
+        </div>
+        <div class="relative z-10 space-y-6">
+          <span class="text-xs font-bold text-primary tracking-widest uppercase">2021 — PRESENT</span>
+          <h3 class="text-3xl font-extrabold">Lead Creative Developer at Digital Bloom</h3>
+          <p class="text-on-surface-variant leading-relaxed text-lg">
+            Leading a cross-functional team of 12 designers and engineers to redefine the aesthetic standards of modern enterprise software. Successfully launched 4 flagships that reached 1M+ users.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-on-surface">
+              <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+              Spearheaded the "Aura Blossom" design language.
+            </li>
+            <li class="flex items-center gap-3 text-on-surface">
+              <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+              Optimized React rendering by 40%.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Medium Card -->
+      <div class="md:col-span-2 bg-surface-container-low p-8 rounded-[2rem] flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold text-secondary tracking-widest uppercase">2018 — 2021</span>
+          <h3 class="text-xl font-bold mt-2">Senior Frontend Engineer at Flux</h3>
+        </div>
+        <p class="text-on-surface-variant mt-4 italic">
+          "Transformed the platform from a legacy dashboard into a fluid, responsive workspace."
+        </p>
+      </div>
+      <!-- Small Card 1 -->
+      <div class="bg-surface-container-lowest p-8 rounded-[2rem] bloom-shadow">
+        <div class="w-12 h-12 rounded-xl bg-tertiary-container flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-on-tertiary-container">architecture</span>
+        </div>
+        <h4 class="font-bold">UI Architect</h4>
+        <p class="text-xs text-on-surface-variant mt-2">Systems thinking for component libraries.</p>
+      </div>
+      <!-- Small Card 2 -->
+      <div class="bg-surface-container-lowest p-8 rounded-[2rem] bloom-shadow">
+        <div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-on-secondary-container">brush</span>
+        </div>
+        <h4 class="font-bold">Visual Design</h4>
+        <p class="text-xs text-on-surface-variant mt-2">Color theory and editorial typography.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Philosophy: Glassmorphism Cards -->
+  <section class="mb-32 relative">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-full bg-gradient-to-r from-primary/5 via-tertiary/5 to-secondary/5 blur-[100px] -z-10"></div>
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold tracking-tight mb-4">Technical Philosophy</h2>
+      <div class="w-24 h-1.5 bg-bloom-gradient mx-auto rounded-full"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-10 rounded-[2.5rem] bg-white/40 backdrop-blur-xl border border-white/20 bloom-shadow">
+        <div class="text-5xl font-black text-primary/20 mb-6">01</div>
+        <h3 class="text-2xl font-bold mb-4">Empathy-Driven Tech</h3>
+        <p class="text-on-surface-variant leading-relaxed">
+          Technology should never be the star of the show; the user's ease is. I build for accessibility first, ensuring that beauty never compromises usability.
+        </p>
+      </div>
+      <div class="p-10 rounded-[2.5rem] bg-white/40 backdrop-blur-xl border border-white/20 bloom-shadow scale-105">
+        <div class="text-5xl font-black text-secondary/20 mb-6">02</div>
+        <h3 class="text-2xl font-bold mb-4">Performance as an Art</h3>
+        <p class="text-on-surface-variant leading-relaxed">
+          A slow site is a broken promise. To me, optimizing bundle sizes and server response times is as much a craft as choosing the right typeface.
+        </p>
+      </div>
+      <div class="p-10 rounded-[2.5rem] bg-white/40 backdrop-blur-xl border border-white/20 bloom-shadow">
+        <div class="text-5xl font-black text-tertiary/20 mb-6">03</div>
+        <h3 class="text-2xl font-bold mb-4">Scalable Simplicity</h3>
+        <p class="text-on-surface-variant leading-relaxed">
+          Codebases should be like trees—growing organically while maintaining a strong, central root system that anyone can understand.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Footer Transition -->
+  <section class="text-center bg-surface-container-low py-20 rounded-[3rem] px-8">
+    <h2 class="text-3xl font-bold mb-6">Let's grow something together.</h2>
+    <p class="text-on-surface-variant mb-10 max-w-xl mx-auto">
+      Whether you have a complex technical challenge or a vision for a beautiful new interface, I'm here to help bring it to life.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="connect.html" class="bg-bloom-gradient text-white px-8 py-4 rounded-xl font-bold bloom-shadow">Get in Touch</a>
+      <a href="projects.html" class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold bloom-shadow">View Case Studies</a>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="shared.js"></script>
+</body>
+</html>

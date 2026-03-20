@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Centrum - Journaling Progress</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface-container": "#f2ecf0",
+          "error": "#ac3149",
+          "primary-container": "#f1a6ff",
+          "on-tertiary-fixed": "#27006a",
+          "primary-fixed": "#f1a6ff",
+          "surface-tint": "#952cb1",
+          "surface-container-highest": "#e7e0e6",
+          "on-primary": "#fff7fb",
+          "surface-container-low": "#f8f2f5",
+          "outline": "#7e797e",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#6948c1",
+          "on-surface": "#343136",
+          "outline-variant": "#b6b0b5",
+          "error-dim": "#770326",
+          "on-background": "#343136",
+          "secondary-fixed-dim": "#ffc5d3",
+          "primary-fixed-dim": "#ec91ff",
+          "on-primary-fixed-variant": "#760093",
+          "on-primary-container": "#680082",
+          "on-secondary-container": "#9a1d50",
+          "surface": "#fef8fb",
+          "on-secondary-fixed-variant": "#a7295a",
+          "surface-variant": "#e7e0e6",
+          "on-tertiary-fixed-variant": "#48229f",
+          "inverse-primary": "#e67aff",
+          "on-secondary-fixed": "#81013e",
+          "secondary-container": "#ffd9e1",
+          "secondary": "#ac2d5e",
+          "on-secondary": "#fff7f7",
+          "on-error": "#fff7f7",
+          "error-container": "#f76a80",
+          "background": "#fef8fb",
+          "tertiary-dim": "#5c3ab4",
+          "on-tertiary": "#fdf7ff",
+          "on-surface-variant": "#625e62",
+          "on-error-container": "#68001f",
+          "tertiary-container": "#c2acff",
+          "inverse-surface": "#0f0e10",
+          "secondary-dim": "#9c1f52",
+          "surface-container-high": "#ede6eb",
+          "on-tertiary-container": "#3f1496",
+          "tertiary-fixed-dim": "#b59cff",
+          "on-primary-fixed": "#47005a",
+          "tertiary-fixed": "#c2acff",
+          "surface-dim": "#dfd8de",
+          "primary": "#952cb1",
+          "secondary-fixed": "#ffd9e1",
+          "primary-dim": "#871ba4",
+          "surface-bright": "#fef8fb",
+          "inverse-on-surface": "#a09c9e"
+        },
+        fontFamily: {
+          "headline": ["Plus Jakarta Sans"],
+          "body": ["Plus Jakarta Sans"],
+          "label": ["Plus Jakarta Sans"]
+        },
+        borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fef8fb; color: #343136; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+</style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+
+<div id="site-nav"></div>
+
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+  <!-- Editorial Header -->
+  <section class="mb-20">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+      <div class="max-w-2xl">
+        <span class="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">The Digital Bloom</span>
+        <h1 class="text-6xl md:text-7xl font-extrabold text-on-surface tracking-tighter leading-[0.9] mb-6">Journaling Progress</h1>
+        <p class="text-lg text-on-surface-variant leading-relaxed">A curated collection of thoughts on design, technology, and the organic unfolding of digital ecosystems. Updated weekly through our editorial lens.</p>
+      </div>
+      <div class="hidden md:block">
+        <div class="bg-surface-container-low p-6 rounded-3xl flex items-center gap-4">
+          <div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-on-primary-container">auto_stories</span>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-on-surface">124 Articles</p>
+            <p class="text-xs text-on-surface-variant">4.2k Weekly Readers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Grid Layout for Recent Posts -->
+  <section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-28">
+    <!-- Featured Post (Large) -->
+    <article class="md:col-span-8 group cursor-pointer">
+      <div class="relative overflow-hidden rounded-3xl bg-surface-container-lowest shadow-[0_8px_32px_rgba(149,44,177,0.04)] transition-all duration-500 hover:shadow-[0_20px_48px_rgba(149,44,177,0.08)]">
+        <div class="aspect-[16/9] w-full overflow-hidden">
+          <img alt="Vibrant soft pink cherry blossoms against clear sky" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYV1Vf3EweNKSnKsUib9bWJUObZtivFi5Grb7vJ53uTwPrnwRASUZYze6_Bqu2syRwNNzeVtHsK0rr7F55bG4AHycgqEyRk5AUWspFuLM1GlHr49m422yjVeNUv8qeUSJI7hHV267_14v32iWv1ofyvCjIxu4Wk08g88T8GgqUNNsFUlm5y_DJTLaInGGftenUu-wgwM3D9wYZnQikGoaAMvsafQ7P7MW8SyPLKRgpeaoqNrTqt_CTFX4a7C8Rv3WAU7fOMlE7otQ"/>
+        </div>
+        <div class="p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-xs font-bold rounded-full">Editorial</span>
+            <span class="text-on-surface-variant text-xs font-medium">March 24, 2024</span>
+          </div>
+          <h2 class="text-3xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">The Aesthetics of Organic Design in Modern SaaS</h2>
+          <p class="text-on-surface-variant leading-relaxed mb-6">How shifting from rigid grids to fluid, botanical-inspired layouts can improve user retention and emotional resonance in professional tools.</p>
+          <div class="flex items-center gap-2 text-primary font-bold text-sm">
+            Read Full Journal <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Secondary Post Stack -->
+    <div class="md:col-span-4 flex flex-col gap-8">
+      <article class="bg-surface-container-lowest p-6 rounded-3xl shadow-[0_8px_32px_rgba(149,44,177,0.04)] group cursor-pointer transition-all">
+        <div class="aspect-video w-full rounded-2xl overflow-hidden mb-4">
+          <img alt="Ethereal purple mountain landscape at dusk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0vB0aP7ua2xnJipZnchVkUKiCUtQhenmTRit7Q5J46w-OTeLxOSp2JlcpxAOmO5bdg3hqaF89RH8VhJGkCMtA3H6rvXNUmX-bXzMnBjIBnnMjT1bJIOWJG9NJXkhOtzlxEJr_26ewf87bzzFAnKf5zyFoVmlSjOZ07g4-m74Stnl_dgZV1vd6qZYvGyK0JJ6gi3cCwOwaCHc_NNyPSyuRjKRkWTDu90v_SUvC1KAPqpJPa3qUa8tsF23q_8gkP3P02u6q3TewfJY"/>
+        </div>
+        <span class="text-primary font-bold text-xs mb-2 block">Technology</span>
+        <h3 class="text-xl font-bold text-on-surface leading-tight group-hover:text-primary transition-colors">Neural Networks &amp; Nature's Patterns</h3>
+      </article>
+      <article class="bg-surface-container-lowest p-6 rounded-3xl shadow-[0_8px_32px_rgba(149,44,177,0.04)] group cursor-pointer transition-all">
+        <div class="aspect-video w-full rounded-2xl overflow-hidden mb-4">
+          <img alt="Close up of leaf veins showing natural symmetry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaE6H3ZL5ASzlQh9oDZr5k38eBuNwXAPwdqHoS6uPJrev-ApA6wjZssTDNAioaRqkqMDK3WBp73lhfRatphrHNh5gFZCFZWlrgFdwX1KM_8COGRJJVtydKF1pk5EZnqmAT54Db9eeADufmo8S8LzZOZCPu_4iBq7rIKUCTOmL3F6TwKDZYFNmg78jT0dPIjbtipAnVimC3GFgYeLHGQTomgUyNjpCEXMW4fkcUTWKRse-yf8pbOviJOE28yCb_bK66i5JDWeU2GxI"/>
+        </div>
+        <span class="text-primary font-bold text-xs mb-2 block">Curation</span>
+        <h3 class="text-xl font-bold text-on-surface leading-tight group-hover:text-primary transition-colors">Finding Stillness in Digital Chaos</h3>
+      </article>
+    </div>
+  </section>
+
+  <!-- Substack Integration Section -->
+  <section class="bg-surface-container-low rounded-[3rem] p-8 md:p-16 relative overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-tertiary/5 rounded-full blur-[100px]"></div>
+    <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">mail</span>
+          </div>
+          <h2 class="text-4xl font-extrabold tracking-tight">The Substack Feed</h2>
+        </div>
+        <p class="text-on-surface-variant text-lg leading-relaxed mb-8">Join 12,000+ readers who receive my weekly newsletter on the intersection of design philosophy and future technology. No spam, just deep dives.</p>
+        <form class="flex flex-col sm:flex-row gap-3">
+          <input class="flex-1 bg-surface-container-lowest border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline-variant transition-all" placeholder="Enter your email" type="email"/>
+          <button class="bg-primary text-on-primary font-bold px-8 py-4 rounded-2xl shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">Subscribe</button>
+        </form>
+        <p class="text-xs text-on-surface-variant mt-4 ml-2 italic">Read by designers at Apple, Stripe, and Vercel.</p>
+      </div>
+      <div class="space-y-6">
+        <div class="bg-surface-container-lowest/80 backdrop-blur-md p-6 rounded-3xl group cursor-pointer border border-white/40 hover:bg-white transition-all shadow-[0_4px_24px_rgba(149,44,177,0.02)]">
+          <div class="flex justify-between items-start mb-3">
+            <span class="text-[10px] font-black uppercase tracking-widest text-primary bg-primary/10 px-2 py-0.5 rounded">Issue #84</span>
+            <span class="text-xs text-on-surface-variant">2 days ago</span>
+          </div>
+          <h4 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Beyond the Rectangular Frame</h4>
+          <p class="text-sm text-on-surface-variant line-clamp-2">Exploring how liquid interfaces and non-linear user journeys are redefining how we interact with information...</p>
+        </div>
+        <div class="bg-surface-container-lowest/80 backdrop-blur-md p-6 rounded-3xl group cursor-pointer border border-white/40 hover:bg-white transition-all shadow-[0_4px_24px_rgba(149,44,177,0.02)]">
+          <div class="flex justify-between items-start mb-3">
+            <span class="text-[10px] font-black uppercase tracking-widest text-primary bg-primary/10 px-2 py-0.5 rounded">Issue #83</span>
+            <span class="text-xs text-on-surface-variant">9 days ago</span>
+          </div>
+          <h4 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">The Psychology of Color in AI</h4>
+          <p class="text-sm text-on-surface-variant line-clamp-2">Why every AI startup is using the same shade of purple and what it means for the future of brand identity...</p>
+        </div>
+        <div class="bg-surface-container-lowest/80 backdrop-blur-md p-6 rounded-3xl group cursor-pointer border border-white/40 hover:bg-white transition-all shadow-[0_4px_24px_rgba(149,44,177,0.02)]">
+          <div class="flex justify-between items-start mb-3">
+            <span class="text-[10px] font-black uppercase tracking-widest text-primary bg-primary/10 px-2 py-0.5 rounded">Issue #82</span>
+            <span class="text-xs text-on-surface-variant">16 days ago</span>
+          </div>
+          <h4 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Curation as a Service</h4>
+          <p class="text-sm text-on-surface-variant line-clamp-2">In an age of infinite content, the most valuable skill isn't creation—it's the ability to filter and present...</p>
+        </div>
+        <a class="inline-flex items-center gap-2 text-sm font-bold text-primary ml-4 hover:translate-x-1 transition-transform" href="#">
+          View Archive on Substack <span class="material-symbols-outlined text-sm">open_in_new</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<!-- Floating Action Button -->
+<div class="fixed bottom-8 right-8 z-40">
+  <button class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center shadow-2xl shadow-primary/30 hover:scale-110 active:scale-90 transition-all group">
+    <span class="material-symbols-outlined text-3xl group-hover:rotate-12 transition-transform" style="font-variation-settings: 'FILL' 1;">edit_square</span>
+  </button>
+</div>
+
+<script src="shared.js"></script>
+</body>
+</html>
