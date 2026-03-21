@@ -1,77 +1,284 @@
+/* ── Design Tokens ───────────────────────────────────────
+   Mirror of tailwind.config.js — edit values in ONE place
+   (tailwind.config.js for Tailwind utilities,
+    here as custom props for plain-CSS components)
+────────────────────────────────────────────────────────── */
+:root {
+  --color-primary:                  #952cb1;
+  --color-primary-dim:              #871ba4;
+  --color-primary-container:        #f1a6ff;
+  --color-on-primary:               #fff7fb;
+  --color-on-primary-container:     #680082;
+
+  --color-secondary:                #ac2d5e;
+  --color-secondary-container:      #ffd9e1;
+  --color-on-secondary-container:   #9a1d50;
+
+  --color-tertiary:                 #6948c1;
+  --color-tertiary-container:       #c2acff;
+  --color-on-tertiary-container:    #3f1496;
+
+  --color-surface:                  #fef8fb;
+  --color-surface-low:              #f8f2f5;
+  --color-surface-container:        #f2ecf0;
+  --color-surface-high:             #ede6eb;
+  --color-surface-highest:          #e7e0e6;
+  --color-surface-white:            #ffffff;
+  --color-surface-dim:              #dfd8de;
+
+  --color-on-surface:               #343136;
+  --color-on-surface-variant:       #625e62;
+  --color-outline:                  #7e797e;
+  --color-outline-variant:          #b6b0b5;
+
+  --shadow-bloom:   0 8px 32px rgba(149, 44, 177, 0.06);
+  --shadow-bloom-lg:0 20px 48px rgba(149, 44, 177, 0.10);
+  --gradient-brand: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+  --gradient-deep:  linear-gradient(135deg, var(--color-tertiary), var(--color-primary));
+  --radius-card:    2.5rem;
+  --radius-xl:      1.5rem;
+}
+
 /* ── Base ─────────────────────────────────────────────── */
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: #fef8fb;
-  color: #343136;
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
   scroll-behavior: smooth;
 }
 
-/* ── Material Symbols ────────────────────────────────── */
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   vertical-align: middle;
 }
+.icon-filled { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+/* ── Page layout ─────────────────────────────────────── */
+.page-section {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+/* ── Cards ───────────────────────────────────────────── */
+.card {
+  background: var(--color-surface-white);
+  border-radius: var(--radius-card);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-bloom);
+}
+.card-tonal {
+  background: var(--color-surface-low);
+  border-radius: var(--radius-card);
+  padding: 2rem;
+}
+.card-primary {
+  background: var(--color-primary);
+  border-radius: var(--radius-card);
+  padding: 2.5rem;
+  color: var(--color-on-primary);
+}
+.card-gradient {
+  background: var(--gradient-deep);
+  border-radius: var(--radius-card);
+  padding: 2.5rem;
+  color: #fff;
+}
+
+/* ── Buttons ─────────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--gradient-brand);
+  color: var(--color-on-primary);
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(149,44,177,0.2);
+  transition: transform 0.2s;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary:hover { transform: scale(1.05); }
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-surface-high);
+  color: var(--color-on-surface);
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s;
+  cursor: pointer;
+  border: none;
+}
+.btn-secondary:hover { background: var(--color-surface-highest); }
+
+/* ── Project card ────────────────────────────────────── */
+.project-card {
+  background: var(--color-surface-white);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.5s;
+}
+.project-card:hover { box-shadow: var(--shadow-bloom-lg); }
+
+.project-card__image {
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+.project-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s;
+}
+.project-card:hover .project-card__image img { transform: scale(1.1); }
+
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+}
+.project-card__body {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.5rem;
+}
+.project-card__btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--color-surface-high);
+  color: var(--color-on-surface);
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.project-card:hover .project-card__btn {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+/* ── Tag / badge ─────────────────────────────────────── */
+.tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* ── Tech stack icon ─────────────────────────────────── */
+.tech-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background: var(--color-surface-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s;
+  color: var(--color-primary);
+}
+.tech-item:hover .tech-icon { background: var(--color-primary-container); }
+
+/* ── Marquee logo ────────────────────────────────────── */
+.marquee-logo {
+  height: 2.5rem;
+  width: auto;
+  opacity: 0.45;
+  filter: grayscale(1);
+  transition: opacity 0.2s;
+}
+.marquee-logo:hover { opacity: 0.8; }
 
 /* ── Scrollbar ───────────────────────────────────────── */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-/* ── Glass surfaces ──────────────────────────────────── */
-.glass-panel,
-.glass-card {
+/* ── Glass ───────────────────────────────────────────── */
+.glass {
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
 }
 
-.glass-nav {
-  background: rgba(254, 248, 251, 0.6);
-  backdrop-filter: blur(24px);
-}
-
-/* ── Shadows ─────────────────────────────────────────── */
-.bloom-shadow {
-  box-shadow: 0 8px 32px rgba(149, 44, 177, 0.06);
-}
-
-/* ── Gradients ───────────────────────────────────────── */
+/* ── Gradient text ───────────────────────────────────── */
 .text-gradient {
-  background: linear-gradient(135deg, #952cb1, #f1a6ff);
+  background: var(--gradient-brand);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.text-gradient-hero {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-tertiary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.bg-bloom-gradient {
-  background: linear-gradient(135deg, #952cb1, #f1a6ff);
-}
-
-.bg-glow {
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(241, 166, 255, 0.15) 0%,
-    rgba(254, 248, 251, 0) 70%
-  );
-}
-
-/* ── Marquee (index / home) ──────────────────────────── */
+/* ── Marquee animation ───────────────────────────────── */
 .marquee {
   display: flex;
   overflow: hidden;
   user-select: none;
   gap: 4rem;
 }
-
 .marquee-content {
   flex-shrink: 0;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   min-width: 100%;
   gap: 4rem;
   animation: marquee-scroll 30s linear infinite;
 }
-
 @keyframes marquee-scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-100%); }
 }
+
+/* ── Decorative aura blobs ───────────────────────────── */
+.aura-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+/* ── Social / feed cards ─────────────────────────────── */
+.feed-item {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: block;
+}
+.feed-item:hover { background: rgba(255, 255, 255, 0.16); }
