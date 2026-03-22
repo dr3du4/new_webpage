@@ -39,6 +39,9 @@
   --radius-xl:      1.5rem;
 }
 
+/* Ensure [hidden] beats any Tailwind display utilities */
+[hidden] { display: none !important; }
+
 /* ── Base ─────────────────────────────────────────────── */
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;

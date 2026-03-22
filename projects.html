@@ -26,109 +26,94 @@
     </p>
   </header>
 
-  <!-- Projects Bento Grid -->
+  <!-- Projects Grid -->
   <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-    <!-- Featured Project 1 (Large) -->
-    <div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest glass-card shadow-[0_8px_32px_rgba(149,44,177,0.06)] transition-all duration-500 hover:translate-y-[-4px]">
-      <div class="aspect-video w-full overflow-hidden">
-        <img alt="Project preview" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg9kMIjYzasAk_8Ew1DwT7cZKO31-5OmZK2zlFrO_RceyYmc9QbMbT68q3x4Er4ofbHQvWXMbs0_xmx1dEU63xzj14mnc4baMuB6F9VnrIz9jQ-kxL0O6bpL8WrhcJ6MMKxn73eunfQBoBFITjONuN3uj--8sDTk4newVq6c2NPlgF0osqmkzVpkCz7t_RyT96UR55_KDGs8zupGoHyeHPa5Q0csCPTNWCWOJ1V35v8txCH7TE7oOKkBtjGCKdHtm6lWSoPfpn9t8"/>
+
+    <!-- Penguino — featured large -->
+    <div class="md:col-span-8 group rounded-[2rem] overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500">
+      <div class="h-56 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center relative overflow-hidden">
+        <span class="material-symbols-outlined text-white/15 absolute select-none" style="font-size:11rem">smart_toy</span>
+        <div class="flex flex-wrap gap-2 justify-center relative z-10 px-8">
+          <span class="tag">Java</span><span class="tag">SpringBoot</span><span class="tag">Docker</span><span class="tag">MySQL</span><span class="tag">Weka</span><span class="tag">JavaScript</span>
+        </div>
       </div>
       <div class="p-8">
         <div class="flex justify-between items-start mb-4">
           <div>
-            <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">Fintech • 2024</span>
-            <h3 class="text-3xl font-bold tracking-tight">Ethereal Ledger</h3>
+            <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">Data Science • ML</span>
+            <h3 class="text-3xl font-bold tracking-tight group-hover:text-primary transition-colors">Penguino</h3>
           </div>
-          <span class="material-symbols-outlined text-primary text-3xl">north_east</span>
+          <span class="material-symbols-outlined text-primary text-3xl opacity-0 group-hover:opacity-100 transition-opacity">north_east</span>
         </div>
         <p class="text-on-surface-variant leading-relaxed max-w-xl mb-6">
-          A decentralized asset management interface inspired by blooming flora. Features high-fidelity glassmorphism and real-time botanical data visualization.
+          Full-stack data pipeline where JavaScript collects data via a webpage, SpringBoot processes and stores it in a Dockerised MySQL DB, and Weka performs ML classification on penguin species datasets.
         </p>
-        <div class="flex gap-3">
-          <span class="px-3 py-1 bg-surface-container rounded-lg text-xs font-medium text-on-surface-variant">React</span>
-          <span class="px-3 py-1 bg-surface-container rounded-lg text-xs font-medium text-on-surface-variant">WebGL</span>
-          <span class="px-3 py-1 bg-surface-container rounded-lg text-xs font-medium text-on-surface-variant">Tailwind</span>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-surface-container rounded-lg text-xs font-medium text-on-surface-variant">SpringBoot</span>
+          <span class="px-3 py-1 bg-surface-container rounded-lg text-xs font-medium text-on-surface-variant">Docker</span>
+          <span class="px-3 py-1 bg-surface-container rounded-lg text-xs font-medium text-on-surface-variant">Weka ML</span>
+          <span class="px-3 py-1 bg-surface-container rounded-lg text-xs font-medium text-on-surface-variant">MySQL</span>
         </div>
       </div>
     </div>
 
-    <!-- Small Project 1 -->
-    <div class="md:col-span-4 group bg-surface-container-low rounded-xl p-8 flex flex-col justify-between transition-all duration-500 hover:bg-surface-container">
+    <!-- Emperor — side card -->
+    <div class="md:col-span-4 group bg-gradient-to-br from-secondary to-secondary-container rounded-[2rem] p-8 flex flex-col justify-between text-white transition-all duration-500 hover:shadow-xl">
       <div>
-        <span class="material-symbols-outlined text-tertiary mb-6 text-4xl">eco</span>
-        <h3 class="text-2xl font-bold mb-4">Leaf Protocol</h3>
-        <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
-          Carbon footprint tracking system for independent creators using algorithmic offsets.
+        <span class="material-symbols-outlined text-4xl mb-4 block opacity-80">videogame_asset</span>
+        <span class="text-xs font-bold uppercase tracking-widest opacity-60 mb-2 block">Game Dev • RTS</span>
+        <h3 class="text-2xl font-bold mb-4">Emperor</h3>
+        <p class="text-white/75 text-sm leading-relaxed">
+          3D Real-Time Strategy game in Unity3D with C# and Gaea terrain. Dual Developer & PM role. Inspired by Civilization — presented at two AGH Games Hall editions and on TVP Kraków.
         </p>
       </div>
-      <div class="mt-auto">
-        <div class="h-40 w-full rounded-xl overflow-hidden mb-6">
-          <img alt="Leaf protocol" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBWXPFQyotNQXyHfShexQSldRIlsjdtKrDOtRY1QmEPuVKx1JVICP6dOEroZBypL7Z9i5KXgeeLzIZhcsQeT4j53_JB4A3ZVNXMjjibDYh2BhU1mv-DSdVVJGj6-8om9RTCnd1YE_lBGfNKpZxlMxKnLgsmPbUOOi_HDhpC05cMaIvVWG9hAjsRun6Gk-1yMhMw_3HD4qEyJfg6qx-sDS3rAwedPz4O8MQrCM5L6pBY4Zv8stFTMk1W2yGbUIUsVOBvbiMYXlP1j4"/>
-        </div>
-        <button class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
-          View Project <span class="material-symbols-outlined">arrow_forward</span>
-        </button>
+      <div class="mt-8 flex flex-wrap gap-2">
+        <span class="tag">C#</span><span class="tag">Unity3D</span><span class="tag">Gaea</span>
       </div>
     </div>
 
-    <!-- Small Project 2 -->
-    <div class="md:col-span-4 group bg-surface-container-low rounded-xl p-8 transition-all duration-500 hover:bg-surface-container">
-      <div class="h-48 w-full rounded-xl overflow-hidden mb-6">
-        <img alt="Aura AI" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs6KtGfYy02ibe3JyhAwKwrgXGpkE9EirTu0dP48UERLThqjF9L2FcAfPPoVfsx5F4vZWpfU92UN_Td83Wwggj0jG6-L7dWroyc67oB3RFTSo2HSW0inlm-Wzx5waeFWNDHQdeaA_4HQcDn8VCEMjy2KO7IMQDf0USvQxhTsTp-s9gS33CAgiFdualCnfvASaQEVyFtL2sS-G7BKuCnXjnZZmDPkn6ByIAZLpVm5Gf2nvDH0D6vlAhQkKFVoLy26ZYOeMiufCeQOw"/>
+    <!-- Quantium -->
+    <div class="md:col-span-4 group bg-surface-container-low rounded-[2rem] p-8 flex flex-col transition-all duration-500 hover:bg-surface-container">
+      <div class="h-36 w-full rounded-xl overflow-hidden mb-6 bg-gradient-to-br from-tertiary to-tertiary-container flex items-center justify-center relative">
+        <span class="material-symbols-outlined text-white/20 absolute select-none" style="font-size:7rem">hub</span>
+        <div class="flex flex-wrap gap-1.5 justify-center relative z-10 px-4">
+          <span class="tag text-[10px]">Python</span><span class="tag text-[10px]">Qiskit</span><span class="tag text-[10px]">Next.js</span>
+        </div>
       </div>
-      <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">AI Core</span>
-      <h3 class="text-2xl font-bold mb-2">Aura Intelligence</h3>
-      <p class="text-on-surface-variant text-sm leading-relaxed">
-        Custom LLM interface that adapts its visual theme based on the emotional tone of the user's prompt.
+      <span class="text-xs font-bold uppercase tracking-widest text-tertiary mb-2 block">Quantum • Space</span>
+      <h3 class="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">Quantium</h3>
+      <p class="text-on-surface-variant text-sm leading-relaxed flex-1">
+        Uploads live ISS telemetry to a Qiskit ML classifier. Seaborn renders results as charts on a Next.js site with a quantum-noise-inspired UI.
       </p>
     </div>
 
-    <!-- Small Project 3 -->
-    <div class="md:col-span-4 group bg-surface-container-lowest glass-card shadow-[0_8px_32px_rgba(149,44,177,0.06)] rounded-xl p-8 transition-all duration-500">
-      <div class="flex justify-between items-center mb-6">
-        <div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center">
-          <span class="material-symbols-outlined text-on-primary-container">auto_awesome</span>
+    <!-- TreeSentinel -->
+    <div class="md:col-span-4 group rounded-[2rem] overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col">
+      <div class="h-36 flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(135deg, #1d6fa4, #7dd3fc)">
+        <span class="material-symbols-outlined text-white/20 absolute select-none" style="font-size:7rem">monitoring</span>
+        <div class="flex flex-wrap gap-1.5 justify-center relative z-10 px-4">
+          <span class="tag text-[10px]">Azure</span><span class="tag text-[10px]">Grafana</span><span class="tag text-[10px]">Flask</span>
         </div>
-        <span class="text-on-surface-variant text-xs font-medium italic">In Progress</span>
       </div>
-      <h3 class="text-2xl font-bold mb-2">Nexus Flow</h3>
-      <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
-        A multi-chain workspace for digital nomads, focused on focus-mode typography and sensory UX.
-      </p>
-      <div class="flex -space-x-3">
-        <div class="w-10 h-10 rounded-xl bg-primary border-4 border-surface overflow-hidden">
-          <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdkqpsJYbOigNkJBo-NJHTrRluYIDehis-_0YVxAmmgk5wE2pkWhNu043ppJBtfMq9DO1YqLy6kRKUtdnzR4o9RuZC-gqCT9Xyl-0RwG0sVVMSd8cfqjWmUuy3oTW0ShAqgNo7zSGRNPO2PhQTuTufw_qbqXRY-Jn1XQQDEngxahycKH5phCWutmq0dcC6CERVzKkAyBTqpkuMUH-nWqspqRKuGR5N5yjCwvDJ1VUB6gLWk13STdeHP1ahRwrnw9WDLUCZnwmVypc"/>
-        </div>
-        <div class="w-10 h-10 rounded-xl bg-secondary border-4 border-surface overflow-hidden">
-          <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjdlbHfw6C_7igRCm0ipypMe4LYpiF_h3pRqquWDsJ5yetQQQfjqmuNq4O-rEV31zK051MdPiBClp_UuHx9BbBCB9hMgS6wEPKAZxLogXPrGUt95V5MuzTYBmEyWzDfdpxcvNZC8mJuQNDoxyAtAUvgF16Uvm6QnpGo7uQt4tSZBAb9XgDbuoZyZ3lvPbeMdiH6lkIY36zGB94jkXnJkTA-OJ6ukGOkzzTcqDQVKq0Y1ixUoDvCZA0MEdmUHbV3KQtpXm3JguXzg"/>
-        </div>
-        <div class="w-10 h-10 rounded-xl bg-tertiary border-4 border-surface flex items-center justify-center text-[10px] text-white font-bold">+12</div>
+      <div class="p-8 flex flex-col flex-1">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#1d6fa4] mb-2 block">Security • Cloud</span>
+        <h3 class="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">TreeSentinel</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed flex-1">
+          Azure-monitored Flask app for a student science conference. Detects 8 network attack types simulated in Python, with Grafana dashboards and email/phone alerting.
+        </p>
       </div>
     </div>
 
-    <!-- Small Project 4 -->
-    <div class="md:col-span-4 group bg-surface-container-low rounded-xl p-8 transition-all duration-500 hover:bg-surface-container">
-      <h3 class="text-2xl font-bold mb-4">Spirit Shell</h3>
-      <div class="flex items-center gap-4 mb-6">
-        <div class="flex-1 h-[2px] bg-outline-variant/30"></div>
-        <span class="material-symbols-outlined text-outline">terminal</span>
-        <div class="flex-1 h-[2px] bg-outline-variant/30"></div>
-      </div>
-      <p class="text-on-surface-variant text-sm leading-relaxed">
-        Custom terminal emulator with botanical shaders and bloom-based syntax highlighting.
-      </p>
-      <div class="mt-8 flex justify-end">
-        <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors">open_in_new</span>
-      </div>
+    <!-- Call to action / more -->
+    <div class="md:col-span-4 bg-surface-container rounded-[2rem] p-8 flex flex-col items-center justify-center text-center gap-4">
+      <span class="material-symbols-outlined text-4xl text-outline">more_horiz</span>
+      <h3 class="text-xl font-bold">More on GitHub</h3>
+      <p class="text-on-surface-variant text-sm leading-relaxed">These are the highlights. Find experiments, coursework, and side projects on GitHub.</p>
+      <a href="#" class="mt-2 px-6 py-2.5 rounded-full bg-on-surface text-surface font-bold text-sm hover:bg-primary transition-colors flex items-center gap-2">
+        GitHub Profile <span class="material-symbols-outlined text-base">open_in_new</span>
+      </a>
     </div>
-  </div>
 
-  <!-- Pagination -->
-  <div class="mt-20 flex flex-col items-center gap-4">
-    <p class="text-on-surface-variant font-medium">Curious for more?</p>
-    <button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-8 py-3 rounded-full font-bold transition-all flex items-center gap-2">
-      Explore Archives <span class="material-symbols-outlined">history</span>
-    </button>
   </div>
 </main>
 
