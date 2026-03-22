@@ -36,9 +36,8 @@
         </div>
         <div class="flex gap-6 text-sm">
           <a href="#" class="text-[#625e62] hover:text-[#952cb1] transition-colors">GitHub</a>
-          <a href="#" class="text-[#625e62] hover:text-[#952cb1] transition-colors">LinkedIn</a>
           <a href="#" class="text-[#625e62] hover:text-[#952cb1] transition-colors">Twitter</a>
-          <a href="#" class="text-[#625e62] hover:text-[#952cb1] transition-colors">Substack</a>
+          <a href="https://substack.com/@janwojtekkrzyszkowski" target="_blank" rel="noopener" class="text-[#625e62] hover:text-[#952cb1] transition-colors">Substack</a>
         </div>
       </div>
     </footer>`;
