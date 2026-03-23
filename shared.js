@@ -29,14 +29,14 @@
       <div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6">
         <div>
           <a href="index.html" class="text-lg font-bold text-[#343136]">Home</a>
-          <p class="text-sm text-[#625e62] mt-1">© 2024 Jan Krzyszkowski. Crafted for the Digital Bloom.</p>
+          <p class="text-sm text-[#625e62] mt-1">© 2026 Jan Krzyszkowski.</p>
         </div>
         <div class="flex gap-8 text-sm">
           ${links.map(({ href, label }) => `<a href="${href}" class="text-[#625e62] hover:text-[#952cb1] transition-colors">${label}</a>`).join('')}
         </div>
         <div class="flex gap-6 text-sm">
-          <a href="#" class="text-[#625e62] hover:text-[#952cb1] transition-colors">GitHub</a>
-          <a href="#" class="text-[#625e62] hover:text-[#952cb1] transition-colors">Twitter</a>
+          <a href="https://github.com/dr3du4" target="_blank" rel="noopener" class="text-[#625e62] hover:text-[#952cb1] transition-colors">GitHub</a>
+          <a href="https://4m4r3n4.itch.io/" target="_blank" rel="noopener" class="text-[#625e62] hover:text-[#952cb1] transition-colors">Itch.io</a>
           <a href="https://substack.com/@janwojtekkrzyszkowski" target="_blank" rel="noopener" class="text-[#625e62] hover:text-[#952cb1] transition-colors">Substack</a>
         </div>
       </div>
