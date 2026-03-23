@@ -249,15 +249,15 @@ body {
   display: flex;
   overflow: hidden;
   user-select: none;
-  gap: 4rem;
 }
 .marquee-content {
   flex-shrink: 0;
   display: flex;
   align-items: center;
   min-width: 100%;
-  gap: 4rem;
-  animation: marquee-scroll 30s linear infinite;
+  gap: 5rem;
+  padding-inline: 2.5rem;
+  animation: marquee-scroll 55s linear infinite;
 }
 @keyframes marquee-scroll {
   from { transform: translateX(0); }
